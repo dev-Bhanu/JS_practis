@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:th="http://www.w3.org/1999/xhtml"
+      xsi:schemaLocation="http://www.thymeleaf.org ">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to GoBharatFresh</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: #f5f5f5;
+        font-family: Arial, sans-serif;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      .container {
+        width: 100%;
+        max-width: 600px;
+        background: #ffffff;
+        margin: 20px auto;
+        border-radius: 8px;
+        overflow: hidden;
+        border: 1px solid #e5e5e5;
+      }
+      .header {
+         display: flex;
+        padding: 20px;
+    
+      }
+      
+      .header img {
+        max-width: 40px;
+        height: 60px;
+        object-fit: contain;
+      }
+      .content {
+        padding: 20px;
+        color: #333333;
+      }
+      h1 {
+        font-size: 22px;
+        margin: 0 0 10px;
+        color: #111111;
+      }
+      p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin: 0 0 15px;
+      }
+      ul {
+        padding-left: 20px;
+        margin: 0 0 15px;
+      }
+      li {
+        margin-bottom: 8px;
+        font-size: 14px;
+      }
+      .btn {
+        display: inline-block;
+        padding: 12px 24px;
+        background: #0066cc;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+      }
+      .footer {
+        padding: 15px;
+        text-align: center;
+        font-size: 12px;
+        color: #777777;
+        border-top: 1px solid #e5e5e5;
+      }
+      .footer a {
+        color: #0066cc;
+        text-decoration: none;
+      }
+        
+       h2{
+        font-size: larger;
+      padding-left: 3px;
+      color: #0066cc;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="container">
+   
+      <tr>
+        <td class="header">
+          <a href="https://www.gobharatfresh.com/" target="_blank">
+            <img class="logo" src="https://goprimelink-logo.s3.ap-south-2.amazonaws.com/logo+image.png" alt="gobharatfresh">
+            
+          </a>
+          <h2>GoBharatFresh</h2>
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="content">
+          <h1 th:text="'Welcome, ' + ${username}"></h1>
+
+          <p>
+            Thanks for signing up with <strong>GoBharatFresh</strong>. Your account has been created successfully and you’re ready to explore!
+          </p>
+          <p>Here’s what you can do next:</p>
+          <ul>
+            <li>  Explore our features and tools</li>
+            <li>  Personalize your account settings</li>
+            <li>  Get the most out of GoBharatFresh</li>
+          </ul>
+          <p style="text-align: center;">
+            <a href="https://www.gobharatfresh.com/" class="btn">Get Started</a>
+          </p>
+          <p>
+            Need help? Visit our <a href=" gobharatfreshsupport@gmail.com">Help Center</a> or contact us at 
+            <a href="mailto:gobharatsupport@gmail.com">gobharatsupport@gmail.com</a>.
+           <br>
+		   – The  GoBharatFresh Team
+		  </p>
+        </td>
+      </tr>
+      <!-- Footer -->
+      <tr>
+        <td class="footer">
+          <p>
+            <a href="https://www.gobharatfresh.com/"> GoBharatFresh  </a>
+          </p>
+          <p>
+            You’re receiving this email because you signed up for GoBharatFresh.<br>
+            © 2025 GoBharatFresh. All rights reserved.
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="orange">orange</button>
+    <button id="green">green</button>
+
+
+    <script>
+        // laxical scope
+//         function outer(){
+//             let b=10;
+          
+//             function inner(){
+//                 let a=10;
+//                 console.log(b);
+//             }
+//             function inner2(){
+//                 console.log(b)
+               
+//             }
+//             inner();
+// inner2();
+//         }
+//         outer();
+
+// closer function
+// function outer(){
+//     let name="sachin";
+//     function inner(){
+//         console.log(name)
+//     }
+//     return inner;
+
+// }
+// let myFuc= outer()
+// myFuc();
+//  document.getElementById("orange").onclick=function(){
+//     document.body.style.backgroundColor="orange";
+//  }
+
+function clickHnader(color){
+// document.body.style.backgroundColor="color";
+return function(){
+    document.body.style.backgroundColor=`${color}`;
+}
+}
+document.getElementById("orange").onclick=clickHnader("orange")
+document.getElementById("green").onclick=clickHnader("green")
+    </script>
+</body>
+</html>
