@@ -5,7 +5,7 @@
 // console.log(boolean)
 
 // let num = "33abc"
-// let num = "false"
+// // let num = "false"
 // console.log(typeof num )
 // let number = Number(num)
 // console.log(number)
@@ -29,10 +29,10 @@
 // let str2= str+str1
 // console.log(str2)
 
-// console.log("1"+ 2)
+// console.log("1"+ 2)  // 12
 // console.log(1 + "2")
-// console.log("1" + 2 +2)
-// console.log(1 +  2 +"2")
+// console.log("1" + 2 +2)   //122
+// console.log(1 +  2 +"2")    //32
 
 // console.log("2">1)
 // console.log("2"<1)
@@ -102,14 +102,14 @@
 //  const {name,...pqr}=abc;
 //  console.log(pqr);
 
-
- // for(let i=1; i<=ab; i++){
+// const ab=10;
+//  for(let i=1; i<=ab; i++){
 //  console.log(i)
 // }
 
 // var a =[11,12,13,14,15];
-// function print(b,...a){
-//     console.log(a)
+// function print(b,...rev){
+//     console.log(rev)
 
 // }
 // print(8,9,10,11,12)
@@ -128,7 +128,7 @@
 // }
 // console.log(Object.entries(obj))
 
- // const obj1={};
+//  const obj1={};
 // const obj2={
 //     name:"bhanu"
 // }
@@ -142,3 +142,25 @@
 //     name:"gangwar"
 // }
 // console.log(obj1[obj2])
+// const users=[
+//   {name:"bhanu",city:"noida"},
+//   {name:"pratap",city:"delhi"},
+//   {name:"gangwar",city:"noida"},
+// ]
+// const cityCount = users.reduce((acc,user)=>{
+//   (acc[user.city]= acc[user.city] || []).push(user);
+//   return acc;
+// },{})
+// console.log(cityCount)
+// console.log(1+2+"3")
+// console.log("1"+2+3)
+// console.log(!!"false"== !!"true")
+
+let x=[1,2,3]
+let y= x.map((item)=>{
+    x.push(item+3)
+    
+    return item+1
+})
+console.log(y)
+ console.log(x)

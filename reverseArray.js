@@ -6,3 +6,5 @@ for(let i=arr.length-1; i>=0 ; i--){
     j++
 }
 console.log(arr1)
+const reverse=arr.sort((a,b)=>b-a)
+console.log(reverse)

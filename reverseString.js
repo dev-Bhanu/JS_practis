@@ -1,8 +1,19 @@
-function reverseString(str){
+// function reverseString(str){
+//     let reverse="";
+//     for(let i =str.length-1; i >=0; i-- ){
+//         reverse += str[i]
+//     }
+//     return reverse ;
+// }
+// console.log(reverseString("Bhanu"))
+
+
+function revStr(str){
     let reverse="";
-    for(let i =str.length-1; i >=0; i-- ){
+    for(let i =str.length-1; i>=0; i--){
         reverse += str[i]
     }
-    return reverse ;
+    return reverse
+
 }
-console.log(reverseString("Bhanu"))
+console.log(revStr("bhanu"))

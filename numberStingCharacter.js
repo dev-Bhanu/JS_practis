@@ -20,17 +20,17 @@
 // console.log(Object.entries(obj))
 
 
-const arr= [20,"q","bhanu","r",34]
+const arr= [20,"q","bhanu","ansh","r",34]
 let ch=[];
 let str=[];
 let num=[];
 arr.forEach((item)=>{
     if(typeof item== "number"){ num.push(item)
-    }else if (typeof item == "string" && item.length===1){ str.push(item)
+    }else if (typeof item == "string" && item.length===1){ ch.push(item)
     }else if (typeof item == "string") { 
-        ( ch.push(item)) 
+        ( str.push(item)) 
     }
 })
 console.log(num)
-console.log(str)
 console.log(ch)
+console.log(str)

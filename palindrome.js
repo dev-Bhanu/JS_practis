@@ -20,4 +20,4 @@ function palindrome(str){
     }
     return rev  === str
 }
-console.log(palindrome("121"))
+console.log(palindrome("madam"))

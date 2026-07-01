@@ -1,4 +1,4 @@
-const arr = [2,5,1,0,12,4];
+const arr = [2,5,1,12,4];
 for(let i=0; i<arr.length; i++){
   for(let j = i+1; j<arr.length; j++){
     if(arr[i]>arr[j]){

@@ -12,3 +12,4 @@ function fibonacciSeries(n){
 
 }
 console.log(fibonacciSeries(10))
+
